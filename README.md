@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# React Refactoring ATM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## **Description**
 
-In the project directory, you can run:
+A React application that allows you to make "Deposits" or "Cash Back" withdrawals changes to an account's balance.
+![start up on Desktop mode](/src/assets/Desktop.png)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **How to run**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Default Mode**
+Upon startup the application is set to a "null" ATM mode. This will show just a drop down menu. An ATM mode selection is required to access more of the application features.
+![start up on Mobile mode](/src/assets/Mobile.png)
 
-### `npm test`
+**Deposit Mode**
+This selection mode will render an input field which you can set the cash value you wish to add to the account balance. Click submit to confirm changes to account.
+![Deposit mode](/src/assets/Deposit.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Cash Back Mode**
+This selection mode will render an input field which allows you to withdraw the set cash value from the account balance. You cannot withdraw a cash value greater than the account balance; doing so will prompt an alert for "Insufficient Funds". Click submit to confirm changes to account.
+![Cash Back mode](/src/assets/CashBack.png)
 
-### `npm run build`
+## **Road Map**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Create components for multiple account use.
+   - `i.e., savings, checking accounts and one for account/s history.`
+2. Add an alert, `"Insufficient Funds"`, when cash input exceeds balance total.
+   - create limit for cash input. It should have an alert for insufficient funds and resets input field back to `'0'`.
+     ![Error Alert for Insufficient Funds](/src/assets/Error_Insufficient_Funds.png)
+3. Disable negative numbers in the input field. It should only be `'0'` and `above`.
+   ![Error Alert for Invalid transaction](/src/assets/Error_Invalid.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **Licenses**
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- MIT
+- Custom styling and code using HTML, CSS, JavaScript, React and Babel.
