@@ -38,4 +38,5 @@ This selection mode will render an input field which allows you to withdraw the 
 ## **Licenses**
 
 - MIT
+- Custom logo created using Procreate.
 - Custom styling and code using HTML, CSS, JavaScript, React and Babel.
